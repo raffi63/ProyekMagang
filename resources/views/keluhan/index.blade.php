@@ -16,6 +16,7 @@
 <thead>
 <tr>
 <th>No.</th>
+<th>User</th>
 <th>Nama Pelanggan</th>
 <th>Penyedia</th>
 <th>Keterangan</th>
@@ -31,6 +32,7 @@
 @foreach($keluhan as $key => $keluhan)
 <tr>
 <td>{{ $key+1 }}</td>
+<td>{{$keluhan->fusers->name}}</td>
 <td>{{ $keluhan->namapelanggan }}</td>
 <td>{{ $keluhan->penyedia }}</td>
 <td>{{ $keluhan->keterangan }}</td>

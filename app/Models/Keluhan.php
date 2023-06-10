@@ -10,6 +10,7 @@ class Keluhan extends Model
     use HasFactory;
     protected $table = 'keluhan';
     protected $fillable = [
+    'id_users',
     'namapelanggan',
     'penyedia',
     'keterangan',
@@ -19,4 +20,8 @@ class Keluhan extends Model
     'teknisi',
     'status'
     ];
+
+    public function fusers(){
+    return $this->belongsTo(User::class, 'id_users', 'id');
+    }
 }

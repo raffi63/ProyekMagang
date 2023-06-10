@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('keluhan', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_users');
             $table->string('namapelanggan');
             $table->enum('penyedia', ['asnet', 'sengked']);
             $table->enum('keterangan', ['instalasi', 'maintenance']);
@@ -23,6 +24,7 @@ return new class extends Migration
             $table->dateTime('waktu_selesai')->nullable();
             $table->string('teknisi');
             $table->enum('status', ['proses_perbaikan','selesai']);
+            $table->foreign('id_users')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

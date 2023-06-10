@@ -320,31 +320,31 @@ return [
         'can'    => 'cs-only'
         ],
         [
-        'text' => 'Pelanggan',
+        'text' => 'Data Pelanggan',
         'url' => '/pelanggan',
         'icon' => 'fa fa-users',
         'can'    => 'cs-only'
         ],
         [
-        'text' => 'Pendaftaran Asnet',
+        'text' => 'Data Pendaftaran Asnet',
         'url' => '/pendaftaran_asnet',
         'icon' => 'fa fa-flag-checkered',
         'can'    => 'cs-only'
         ], 
         [
-        'text' => 'Pembayaran',
+        'text' => 'Data Pembayaran',
         'url' => '/pembayaran',
         'icon' => 'fas fa-money-bill-wave',
         'can'    => 'cs-only',
         ],  
         [
-        'text' => 'Keluhan',
+        'text' => 'Data Keluhan',
         'url' => '/keluhan',
         'icon' => 'fa fa-medkit',
         'can'    => 'cs-only'
         ],
         [
-        'text' => 'User',
+        'text' => 'Data User',
         'url' => '/users',
         'icon' => 'fa fa-users',
         'can'    => 'cs-only'

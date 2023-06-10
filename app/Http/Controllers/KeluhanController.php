@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Keluhan;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class KeluhanController extends Controller
@@ -28,7 +29,10 @@ class KeluhanController extends Controller
      */
     public function create()
     {
-        return view('keluhan.create');
+        
+        return view('keluhan.create', [
+            'users' => User::all()
+        ]);
     }
 
     /**
@@ -47,7 +51,8 @@ class KeluhanController extends Controller
             'action_keterangan' => 'required',
             'waktu_selesai' => 'required',
             'teknisi' => 'required',
-            'status' => 'required'
+            'status' => 'required',
+            'id_users' => 'required'
         ]);
         
         $keluhan = Keluhan::create($request->all());
@@ -70,7 +75,8 @@ class KeluhanController extends Controller
         }
         
         return view('keluhan.edit', [
-            'keluhan' => $keluhan
+            'keluhan' => $keluhan,
+            'users' => User::all()
         ]);
     }
 
@@ -91,7 +97,8 @@ class KeluhanController extends Controller
             'action_keterangan' => 'required',
             'waktu_selesai' => 'required',
             'teknisi' => 'required',
-            'status' => 'required'
+            'status' => 'required',
+            'id_users' => 'required'
         ]);
         
         $keluhan = Keluhan::find($id);

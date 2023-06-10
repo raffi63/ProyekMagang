@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->enum('metode', ['BRI', 'BCA', 'Mandiri']);
             $table->string('foto');
-            $table->string('kode_pelanggan')->unique();
+            $table->string('kode_pelanggan');
             $table->foreign('kode_pelanggan')->references('kode')->on('pelanggan')->onDelete('cascade')->onUpdate('cascade'); 
             $table->timestamps();
         });
