@@ -36,7 +36,26 @@ Route::resource('pendaftaran_asnet', \App\Http\Controllers\PendaftaranAsnetContr
 Route::resource('daftar', \App\Http\Controllers\DaftarController::class)->middleware('auth');
 Route::resource('bayar', \App\Http\Controllers\BayarController::class)->middleware('auth');
 
+Route::get('/about', function () {
+    return view('about');
+});
 
-// Route::get('/users/daftar/{id}', [App\Http\Controllers\UserController::class, 'daftar'])->name('users.daftar');
-// Route::post('/users/updatedaftar/{id}', [App\Http\Controllers\UserController::class, 'updatedaftar'])->name('users.updatedaftar');
+Route::get('/blog', function () {
+    return view('blog');
+});
 
+Route::get('/client', function () {
+    return view('client');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/main', function () {
+    return view('welcome');
+});
+
+Route::get('/services', function () {
+    return view('services');
+});

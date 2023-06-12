@@ -64,8 +64,8 @@ return [
     */
 
     'logo' => '<b>Dashboard</b>',
-    'logo_img' => 'https://www.sengked.com/img/asnet.png',
-    'logo_img_class' => 'brand-image elevation-3',
+    'logo_img' => 'https://www.as.net.id/wp-content/uploads/2020/04/logo-2982.png',
+    'logo_img_class' => 'brand-image',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => null,
@@ -187,14 +187,14 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => 'bg-gradient-orange',
+    'classes_brand' => 'bg-blue',
     'classes_brand_text' => '',
-    'classes_content_wrapper' => 'bg-dark',
+    'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => 'text-blue',
-    'classes_sidebar' => 'sidebar-dark-orange elevation-4',
+    'classes_sidebar' => 'sidebar-dark-blue elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-orange',
+    'classes_topnav' => 'navbar-blue',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -308,17 +308,29 @@ return [
         'can'    => 'cs-only'
         ],
         [
+        'text' => 'Data User',
+        'url' => '/users',
+        'icon' => 'fa fa-users',
+        'can'    => 'cs-only'
+        ], 
+        [
         'text' => 'Daftar',
         'url' => '/daftar',
         'icon' => 'fa fa-users',
         'can'    => 'cs-only'
         ],
         [
+        'text' => 'Data Pembayaran',
+        'url' => '/pembayaran',
+        'icon' => 'fas fa-money-bill-wave',
+        'can'    => 'cs-only',
+        ],
+        [
         'text' => 'Bayar',
         'url' => '/bayar',
         'icon' => 'fa fa-users',
         'can'    => 'cs-only'
-        ],
+        ],  
         [
         'text' => 'Data Pelanggan',
         'url' => '/pelanggan',
@@ -332,23 +344,11 @@ return [
         'can'    => 'cs-only'
         ], 
         [
-        'text' => 'Data Pembayaran',
-        'url' => '/pembayaran',
-        'icon' => 'fas fa-money-bill-wave',
-        'can'    => 'cs-only',
-        ],  
-        [
         'text' => 'Data Keluhan',
         'url' => '/keluhan',
         'icon' => 'fa fa-medkit',
         'can'    => 'cs-only'
         ],
-        [
-        'text' => 'Data User',
-        'url' => '/users',
-        'icon' => 'fa fa-users',
-        'can'    => 'cs-only'
-        ], 
         [
             'type'         => 'navbar-search',
             'text'         => 'search',

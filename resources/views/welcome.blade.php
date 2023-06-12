@@ -1,447 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asnet | Dashboard</title>
-    <link rel="stylesheet" href="../assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../dist/css/iconfont/tabler-icons.css">
-    <link rel="stylesheet" href="../dist/css/style.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Heado</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- owl carousel style -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body>
-    <!------------------------------>
-    <!-- Header Start -->
-    <!------------------------------>
-    <header class="main-header position-fixed w-100">
-            <div class="container">
-                <nav class="navbar navbar-expand-xl py-0">
-                    <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="home"><img src="https://www.as.net.id/wp-content/uploads/2020/04/logo-2982.png" alt=""></a>
-                    </div>
-                    <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
-                        <i class="ti ti-menu-2 text-warning"></i>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-capitalize" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-capitalize" href="#">Sengked Fiber</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-capitalize" href="#">Elements</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-capitalize" href="#">blog</a>
-                                </li>
-                            </ul>
-                        
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                        <a href="{{ route('login') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Log in</a>
-                        <a href="{{ route('register') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Register</a>
-                </div>
-        
-                    </div>
-                </nav>
-            </div>
-
-            <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"><img src="../assets/images/Creato-logo.svg" alt=""></a>
-                    </div> 
-                    <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
-                </div>
-                <div class="offcanvas-body pt-0">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Pricing </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Elements </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">blog </a>
-                        </li>
-                        </ul>
-                        <div class="login d-block align-items-center mt-3">
-                            <a class="btn btn-warning text-capitalize w-100" href="register">Register</a>
-                        </div>
-
-                        <div class="login d-block align-items-center mt-3">
-                            <a class="btn btn-warning text-capitalize w-100" href="login">Login</a>
-                        </div>    
-                </div>
-            </div>
-    </header>
-    <!------------------------------>
-    <!-- Header End  -->
-    <!------------------------------>
-
-    <!------------------------------>
-    <!--- Hero Banner Start--------->
-    <!------------------------------>
-    <section class="hero-banner position-relative overflow-hidden">
-        <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="position-relative left-hero-color">
-                        <h2 class="mb-0 fw-bold">
-                            Rasakan Kecepatan Internet Bebas Tanpa Hambatan
-                        </h2>
-                        <p>Asnet akan hadir di kota kota mu.</p>
-                        <a href="#" class="btn btn-warning btn-hover-secondery"><span class="d-inline-block me-2"><i class="ti ti-playstation-triangle"></i></span>Ikuti Kami di Social Media</a>
-                    </div>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="position-relative right-hero-color">
-                        <img src="https://www.as.net.id/wp-content/uploads/2019/10/home_03_img_01-768x798.png" class="img-fluid"> 
-                    </div>          
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------------------------------>
-    <!--- Hero Banner End--------->
-    <!------------------------------>
-
-    <!------------------------------>
-    <!--- Service sectin Start------>
-    <!------------------------------>
-    <section class="service position-relative overflow-hidden">
-        <div class="container position-relative">
-            <img src="../assets/images/service/dot-shape.png" class="shape position-absolute">
-            <div class="row">
-                <div class="col-12"><small class="fs-7 d-block">Working Process</small></div>
-                <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
-                    <h2 class="fs-0.5 text-black mb-0">Everything Is Connected<br> But Some Things Are Connected Well</h2>
-                    <a href="#" class="btn btn-warning btn-hover-secondery section-btn">All Services</a>
-                </div>
-            </div>
-            <div class="row d-flex flex-wrap justify-content-center step-row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-download text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 1</h5>
-                            <h3 class="fs-4">Daftar di Website Kami</h3>
-                            <p class="fs-7 mb-0 fw-500">Pastikan untuk mengisi data secara lengkap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-user text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 2</h5>
-                            <h3 class="fs-4">Tunggu Konfirmasi dari CS Kami</h3>
-                            <p class="fs-7 mb-0 fw-500">Selama menunggu mohon bersabar untuk di kontak CS kami</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-gift text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 3</h5>
-                            <h3 class="fs-4">Rasakan Kecepatan Internet yang Tanpa Batas</h3>
-                            <p class="fs-7 mb-0 fw-500">Kecepatan Hingga 1Gbps</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------------------------------>
-    <!--- Service sectin Start------>
-    <!------------------------------>
-    
-    <!---------------------------------->
-    <!--- Our Service section Start------>
-    <!---------------------------------->
-    <section class="our-service position-relative overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="../assets/images/our-service/isp.jpg" class="img-fluid"> 
-                </div>
-                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-xxl-0 ps-xl-0 ps-lg-3 ps-md-3 ps-sm-3 ps-3">
-                    <small class="fs-7 d-block">Our Service</small>
-                    <h2 class="fs-2 text-black mb-0">Internet Service Provider</h2>
-                    <p class="mb-0 fw-500 fs-7">
-                        Premium Internet Solutions
-                    </p>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li class="d-flex flex-wrap align-items-start">
-                            <i class="ti ti-circle-check fs-4 pe-2"></i>
-                            <span class="fs-7 text-black">1:1 Bandwidth</span>
-                        </li>
-                        <li class="d-flex flex-wrap align-items-start">
-                            <i class="ti ti-circle-check fs-4 pe-2"></i>
-                            <span class="fs-7 text-black">24/7 Customer Service</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <!------------------------------>
-    <!--- Our Service sectin End---->
-    <!------------------------------>
-    
-    <!------------------------------>
-    <!-- Pricing section Start------>
-    <!------------------------------>
-    <section class="pricing position-relative overflow-hidden">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                    <a class="navbar-brand py-0 me-0" href="#"><img src="https://www.sengkedfiber.com/content/internet/images/logo.png" alt=""></a>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 class="fs-2 pricing-head text-black mb-0 position-relative">Start From 199K IDR</h2>
-                </div>
-            </div>
-            <div class="row plans">
-                <div class="col-12 text-center">
-                    <div class="form-check form-switch d-flex justify-content-center ps-0 align-items-center">
-                        <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Monthly</label>
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                        <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Yearly</label>
-                    </div>
-                    <div class="save d-inline-block position-relative text-warning fw-500 fs-9 text-center">Save Up To 58%</div>
-                </div>
-            </div>
-            <div class="row justify-content-center price-plan">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="card-body pb-4">
-                            <div class="position-absolute badge bg-warning d-inline-block mx-auto">
-                            Most Popular
-                        </div>
-                            <small class="fs-7 d-block text-warning text-center">Paket Internet H1</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">199K</sub><sup class="fs-6 position-absolute"> <del> 349 K</del></sup></h2>
-                            <small class="fs-7 d-block text-center">Up To 25 Mbps</small>
-                            <p class="fs-7 text-center fw-500">Benefit : </p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Modem</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Biaya Instalasi</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">IP Dynamic Private</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Bebas Kuota Tanpa FUP</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">24 Hours 7 Days Support</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="{{ route('register') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Pake Iternet H2</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">299K</sub><sup class="fs-6 position-absolute"> <del> 449 K</del></sup></h2>
-                            <small class="fs-7 d-block text-center">Up To 35 Mbps</small>
-                            <p class="fs-7 text-center fw-500">Benefit :</p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Modem</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Biaya Instalasi</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">IP Dynamic Private</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Bebas Kuota Tanpa FUP</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">24 Hours 7 Days Support</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="{{ route('register') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Paket Internet H3</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">440k</sub><sup class="fs-6 position-absolute"> <del> 590 K</del></sup></h2>
-                            <small class="fs-7 d-block text-center">Up To 45 Mbpss</small>
-                            <p class="fs-7 text-center fw-500">Benefit :</p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Modem</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Biaya Instalasi</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">IP Dynamic Private</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Bebas Kuota Tanpa FUP</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">24 Hours 7 Days Support</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="{{ route('register') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Paket Internet H4</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">690K</sub><sup class="fs-6 position-absolute"> <del> 840 K</del></sup></h2>
-                            <small class="fs-7 d-block text-center">Up To 60 Mbps</small>
-                            <p class="fs-7 text-center fw-500">Benefit :</p>
-<ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Modem</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Free Biaya Instalasi</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">IP Dynamic Private</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Bebas Kuota Tanpa FUP</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">24 Hours 7 Days Support</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="{{ route('register') }}" class="btn btn-warning btn-hover-secondery text-capitalize">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------------------------------>
-    <!-- Pricing section End-------->
-    <!------------------------------>   
-
-    <!------------------------------>
-    <!-----Footer Start------------->
-    <!------------------------------>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="footer-logo-col">
-                        <a href="#"><img src="https://www.as.net.id/wp-content/uploads/2020/04/logo-2982.png"></a>
-                        <p class="blue-light mb-0 fs-7 fw-500">Since 2007 ADI SANGGORO Internet Broadband & Data Center started its service by developing divisions working in the provision of internet connections via wireless.</p>
-                        <div class="callus text-white fw-500 fs-7">
-                             Jln. Dr Semeru No 23E Bogor Tengah Bogor 16111, Indonesia
-                            <div class="blue-light">Call us: <a href="#" class="text-warning fw-500 fs-7 text-decoration-none"> 0251-3100999 / 0251-8339929
-
-</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                    <h5 class="text-white">Social</h5>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                    <h5 class="text-white">Company</h5>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="https://www.as.net.id/" target="_blank" >About</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Legal & Privacy</a></li>
-                    </ul>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="subscribe">
-                        <h5 class="text-white">Subscribe</h5>
-                        <p class="blue-light fw-500">Subscribe to get the latest news form us
-                        </p>
-                        <div class="input-group">
-                            <input type="email" class="form-control br-15" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="button-addon2">
-                            <button class="btn btn-warning btn-hover-secondery ms-xxl-2 ms-xl-2 ls-lg-0 ms-md-0 ms-sm-0 ms-0"  type="button" id="button-addon2">Register</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2023</span> - All Rights Reserved by <a href="https://adminmart.com/" class="blue-light text-decoration-none">adminmart.com</a> Dsitributed By <a href="https://themewagon.com" class="blue-light text-decoration-none">ThemeWagon</a></div>
-        </div>
-    </footer>
-    <!------------------------------>
-    <!-------Footer End------------->
-    <!------------------------------>
-
-    
-    <script src="../dist/js/jquery.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
-    <script src="../assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
-    <script src="../dist/js/custom.js"></script>
-
+<!--header section start -->
+<div class="header_section">
+<div class="container">
+<nav class="navbar navbar-dark bg-dark">
+<a class="logo" href="main"><img src="https://www.as.net.id/wp-content/uploads/2020/04/logo-2982.png"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarsExample01">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="login">Login</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="register">Register</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="services">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="blog">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact">Contact Us</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<!--banner section start -->
+<div class="banner_section layout_padding">
+<div id="my_slider" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="taital_main">
+<h4 class="banner_taital">Welcome</h4>
+<p class="banner_text">Rasakan Kecepatan Internet Bebas Tanpa Hambatan </p>
+<div class="read_bt"><a href="#">Read More</a></div>
+</div>
+</div>
+<div class="col-md-6">
+<div><img src="images/img-1.png" class="image_1"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="taital_main">
+<h4 class="banner_taital">Web Agency</h4>
+<p class="banner_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem I</p>
+<div class="read_bt"><a href="#">Read More</a></div>
+</div>
+</div>
+<div class="col-md-6">
+<div><img src="images/img-1.png" class="image_1"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="taital_main">
+<h4 class="banner_taital">Web Agency</h4>
+<p class="banner_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem I</p>
+<div class="read_bt"><a href="#">Read More</a></div>
+</div>
+</div>
+<div class="col-md-6">
+<div><img src="images/img-1.png" class="image_1"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+<i class=""><img src="images/left-icon.png"></i>
+</a>
+<a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+<i class=""><img src="images/right-icon.png"></i>
+</a>
+</div>
+</div>
+<!--banner section end -->
+</div>
+<!--header section end -->
+<!--about section start -->
+<div class="about_section layout_padding">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="image_2"><img src="images/img-2.png"></div>
+</div>
+<div class="col-md-6">
+<h1 class="about_taital">About <span class="us_text">Us</span></h1>
+<p class="about_text">Since 2007 ADI SANGGORO Internet Broadband & Data Center started its service by developing divisions working in the provision of internet connections via wireless.</p>
+<div class="read_bt_1"><a href="about">Read More</a></div>
+</div>
+</div>
+</div>
+</div>
+<!--about section end -->
+<!--services section start -->
+<div class="services_section layout_padding">
+<div class="container">
+<h1 class="service_taital"><span class="our_text">Our</span> Services</h1>
+<p class="service_text">Everything Is Connected But Some Things Are Connected Well</p>
+<div class="services_section_2">
+<div class="row">
+<div class="col-sm-4">
+<div class="icon_1"><img src="images/icon-1.png"></div>
+<h4 class="design_text">Internet Service Provider</h4>
+<p class="lorem_text">Premium Internet Solution </p>
+<div class="icon_1"><img src="images/icon-2.png"></div>
+<h4 class="design_text">Hosting, Domain & VPS</h4>
+<p class="lorem_text">Realible Web Hosting</p>
+</div>
+<div class="col-sm-4">
+<div class="icon_3"><img src="images/icon-3.png"></div>
+<h4 class="design_text">Software Development</h4>
+<p class="lorem_text">Development Your Dream Application</p>
+<div class="read_bt_2"><a href="Services">Read More</a></div>
+</div>
+<div class="col-sm-4">
+<div class="icon_1"><img src="images/icon-4.png"></div>
+<h4 class="design_text">Cloud Computing</h4>
+<p class="lorem_text">The Latest Cloud Computing</p>
+<div class="icon_1"><img src="images/icon-5.png"></div>
+<h4 class="design_text">Data Center</h4>
+<p class="lorem_text">Dukungan 7 x 24 Jam</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--services section end -->
+<!--newsletter section start -->
+<div class="newsletter_section">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h1 class="newsletter_text">Subscribe Now </h1>
+<p class="tempor_text">Mari berkomunikasi dan berdiskusi bersama team profesional kami, yang siap membantu segera kebutuhan IoT perusahaan anda</p>
+</div>
+<div class="col-md-6">
+<div class="mail_bt_main">
+<input type="text" class="mail_text" placeholder="Enter Tour Mail" name="Enter Tour Mail">
+<div class="subscribe_bt"><a href="#">SUBSCRIBE</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--newsletter section end -->
+<!--footer section start -->
+<div class="footer_section layout_padding">
+<div class="container">
+<div class="address_main">
+<div class="address_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Jln. Dr Semeru No 23E Bogor Tengah</span></a></div>
+<div class="address_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">0251-3100999 / 0251-8339929</span></a></div>
+<div class="address_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
+</div>
+<div class="footer_section_2">
+<div class="row">
+<div class="col-lg-3 col-sm-6">
+<h4 class="link_text">Useful link</h4>
+<div class="footer_menu">
+<ul>
+<li><a href="main">Home</a></li>
+<li><a href="about">About</a></li>
+<li><a href="services">Services</a></li>
+<li><a href="contact">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<h4 class="link_text">Services</h4>
+<p class="footer_text">Internet Service Provider
+Domain Registration
+Dedicated Server
+Colocation Server
+Point of Sales</p>
+</div>
+<div class="col-lg-3 col-sm-6">
+<h4 class="link_text">social media</h4>
+<div class="social_icon">
+<ul>
+<li><a href="#"><img src="images/fb-icon.png"></a></li>
+<li><a href="#"><img src="images/twitter-icon.png"></a></li>
+<li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+<li><a href="#"><img src="images/youtub-icon.png"></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<h4 class="link_text">Our Branchs</h4>
+<p class="footer_text_1">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--client section end -->
+<!--copyright section start -->
+<div class="copyright_section">
+<div class="container">
+<p class="copyright_text">Copyright 2023 All Right Reserved By <a href="https://html.design">Free Html Templates</a> Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p>
+</div>
+</div>
+<!--copyright section end -->
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- javascript --> 
+<script src="js/owl.carousel.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+<script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 </html>
