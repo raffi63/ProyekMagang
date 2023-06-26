@@ -347,7 +347,25 @@ return [
         'text' => 'Data Keluhan',
         'url' => '/keluhan',
         'icon' => 'fa fa-medkit',
-        'can'    => 'cs-only'
+        'can'    => 'noc-only'
+        ],
+        [
+            'text' => 'Data Keluhan',
+            'url' => '/keluhanmarketing',
+            'icon' => 'fa fa-medkit',
+            'can'    => 'marketing-only'
+        ],
+        [
+            'text' => 'Data Keluhan',
+            'url' => '/keluhanpelanggan',
+            'icon' => 'fa fa-medkit',
+            'can'    => 'pelanggan-only'
+        ],
+        [
+            'text' => 'Data Keluhan',
+            'url' => '/keluhanteknisi',
+            'icon' => 'fa fa-medkit',
+            'can'    => 'teknisi-only'
         ],
         [
             'type'         => 'navbar-search',

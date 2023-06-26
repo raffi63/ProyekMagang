@@ -22,6 +22,6 @@ class Keluhan extends Model
     ];
 
     public function fusers(){
-    return $this->belongsTo(User::class, 'id_users', 'id');
+    return $this->belongsTo(User::class, 'id_users', 'id', 'email');
     }
 }

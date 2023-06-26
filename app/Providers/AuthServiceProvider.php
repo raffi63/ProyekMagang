@@ -77,5 +77,12 @@ class AuthServiceProvider extends ServiceProvider
     }
     return false;
     });
+
+    Gate::define('teknisi-only', function ($user) {
+        if ($user->level == 'teknisi'){
+        return true;
+        }
+        return false;
+        });
     }
 }
