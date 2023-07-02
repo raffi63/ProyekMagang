@@ -293,7 +293,7 @@ return [
         [
         'text' => 'Data User',
         'url' => '/users',
-        'icon' => 'fa fa-users',
+        'icon' => 'fas fa-user-friends',
         'can'    => 'cs-only'
         ], 
         [
@@ -311,13 +311,13 @@ return [
         [
         'text' => 'Bayar',
         'url' => '/bayar',
-        'icon' => 'fa fa-users',
+        'icon' => 'fas fa-money-check',
         'can'    => 'pelanggan-only'
         ],  
         [
         'text' => 'Data Pelanggan',
         'url' => '/pelanggan',
-        'icon' => 'fa fa-users',
+        'icon' => 'fas fa-user-tag',
         'can'    => 'cs-only'
         ],
         [
@@ -341,7 +341,7 @@ return [
         [
             'text' => 'Keluhan',
             'url' => '/keluhanpelanggan',
-            'icon' => 'fas fa-value-absolute',
+            'icon' => 'fas fa-toolbox',
             'can'    => 'pelanggan-only'
         ],
         [
