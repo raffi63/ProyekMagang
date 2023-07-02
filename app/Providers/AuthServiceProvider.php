@@ -30,11 +30,17 @@ class AuthServiceProvider extends ServiceProvider
     if ($user->level == 'noc'){
     return true;
     }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
     return false;
     });
 //Mengatur Hak Akses untuk cs
     Gate::define('cs-only', function ($user) {
     if ($user->level == 'cs'){
+    return true;
+    }
+    elseif ($user->level == 'admin'){
     return true;
     }
     return false;
@@ -44,12 +50,18 @@ class AuthServiceProvider extends ServiceProvider
     if ($user->level == 'pelanggan'){
     return true;
     }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
     return false;
     });
 
     //Mengatur Hak Akses untuk pelanggan
     Gate::define('marketing-only', function ($user) {
     if ($user->level == 'marketing'){
+    return true;
+    }
+    elseif ($user->level == 'admin'){
     return true;
     }
     return false;
@@ -65,6 +77,9 @@ class AuthServiceProvider extends ServiceProvider
     elseif ($user->level == 'pelanggan'){
     return true;
     }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
     return false;
     });
 
@@ -75,14 +90,57 @@ class AuthServiceProvider extends ServiceProvider
     elseif ($user->level == 'pelanggan'){
     return true;
     }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
     return false;
     });
 
     Gate::define('teknisi-only', function ($user) {
-        if ($user->level == 'teknisi'){
-        return true;
-        }
-        return false;
-        });
+    if ($user->level == 'teknisi'){
+    return true;
+    }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
+    return false;
+    });
+
+
+    Gate::define('noc-marketing-cs', function ($user) {
+    if ($user->level == 'marketing'){
+    return true;
+    }
+    elseif ($user->level == 'noc'){
+    return true;
+    }
+    elseif ($user->level == 'cs'){
+    return true;
+    }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
+    return false;
+    });
+
+    Gate::define('noc-marketing-cs-pelanggan', function ($user) {
+    if ($user->level == 'marketing'){
+    return true;
+    }
+    elseif ($user->level == 'noc'){
+    return true;
+    }
+    elseif ($user->level == 'cs'){
+    return true;
+    }
+    elseif ($user->level == 'pelanggan'){
+    return true;
+    }
+    elseif ($user->level == 'admin'){
+    return true;
+    }
+    return false;
+    });
+
     }
 }

@@ -50,6 +50,8 @@ name="level">
 <option value="cs" @if ($user->level == 'cs' || old('level') == 'cs') selected @endif>cs</option>
 <option value="pelanggan" @if ($user->level == 'pelanggan' || old('level') == 'pelanggan') selected @endif>pelanggan</option>
 <option value="marketing" @if ($user->level == 'marketing' || old('level') == 'marketing') selected @endif>marketing</option>
+<option value="teknisi" @if ($user->level == 'teknisi' || old('level') == 'teknisi') selected @endif>teknisi</option>
+<option value="admin" @if ($user->level == 'admin' || old('level') == 'admin') selected @endif>admin</option>
 </select>
 @error('level')
 <span class="text-danger">{{ $message }}</span>

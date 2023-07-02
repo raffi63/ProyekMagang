@@ -51,6 +51,8 @@ name="level">
 <option value="cs" @if (old('level') == 'cs') selected @endif>cs</option>
 <option value="pelanggan" @if (old('level') == 'pelanggan') selected @endif>pelanggan</option>
 <option value="marketing" @if (old('level') == 'marketing') selected @endif>marketing</option>
+<option value="teknisi" @if (old('level') == 'teknisi') selected @endif>teknisi</option>
+<option value="admin" @if (old('level') == 'admin') selected @endif>admin</option>
 </select>
 @error('level')
 <span class="text-danger">{{ $message }}</span>

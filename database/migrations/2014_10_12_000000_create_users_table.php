@@ -24,7 +24,7 @@ return new class extends Migration
             $table->enum('paket', ['h1', 'h2', 'h3', 'h4'])->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 255);
-            $table->enum('level', ['noc', 'cs', 'pelanggan', 'marketing', 'teknisi'])->default('pelanggan');
+            $table->enum('level', ['noc', 'cs', 'pelanggan', 'marketing', 'teknisi', 'admin'])->default('pelanggan');
             $table->rememberToken();
             $table->timestamps();
         });

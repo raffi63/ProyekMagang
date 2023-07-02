@@ -290,23 +290,6 @@ return [
     */
 
     'menu' => [
-        // Navbar items:
-        [
-        'header' => 'Customer Service',
-        'can'    => 'cs-only'
-        ],
-        [
-        'header' => 'Network Operation Centre',
-        'can'    => 'cs-only'
-        ],
-        [
-        'header' => 'Marketing Asnet',
-        'can'    => 'cs-only'
-        ],
-        [
-        'header' => 'Pelanggan Sengked Fiber',
-        'can'    => 'cs-only'
-        ],
         [
         'text' => 'Data User',
         'url' => '/users',
@@ -314,10 +297,10 @@ return [
         'can'    => 'cs-only'
         ], 
         [
-        'text' => 'Daftar',
+        'text' => 'Daftar Sengked Fiber',
         'url' => '/daftar',
         'icon' => 'fa fa-users',
-        'can'    => 'cs-only'
+        'can'    => 'pelanggan-only'
         ],
         [
         'text' => 'Data Pembayaran',
@@ -329,7 +312,7 @@ return [
         'text' => 'Bayar',
         'url' => '/bayar',
         'icon' => 'fa fa-users',
-        'can'    => 'cs-only'
+        'can'    => 'pelanggan-only'
         ],  
         [
         'text' => 'Data Pelanggan',
@@ -341,30 +324,30 @@ return [
         'text' => 'Data Pendaftaran Asnet',
         'url' => '/pendaftaran_asnet',
         'icon' => 'fa fa-flag-checkered',
-        'can'    => 'cs-only'
+        'can'    => 'marketing-only'
         ], 
-        [
-        'text' => 'Data Keluhan',
-        'url' => '/keluhan',
-        'icon' => 'fa fa-medkit',
-        'can'    => 'noc-only'
-        ],
+        // [
+        // 'text' => 'Data Keluhan',
+        // 'url' => '/keluhan',
+        // 'icon' => 'fa fa-medkit',
+        // 'can'    => 'noc-marketing-cs'
+        // ],
         [
             'text' => 'Data Keluhan',
             'url' => '/keluhanmarketing',
-            'icon' => 'fa fa-medkit',
+            'icon' => 'fas fa-upload',
             'can'    => 'marketing-only'
         ],
         [
-            'text' => 'Data Keluhan',
+            'text' => 'Keluhan',
             'url' => '/keluhanpelanggan',
-            'icon' => 'fa fa-medkit',
+            'icon' => 'fas fa-value-absolute',
             'can'    => 'pelanggan-only'
         ],
         [
-            'text' => 'Data Keluhan',
+            'text' => 'Data Keluhan Teknisi',
             'url' => '/keluhanteknisi',
-            'icon' => 'fa fa-medkit',
+            'icon' => 'fas fa-wrench',
             'can'    => 'teknisi-only'
         ],
         [

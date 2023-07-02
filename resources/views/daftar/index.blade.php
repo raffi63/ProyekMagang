@@ -14,7 +14,7 @@
 <th>No.</th>
 <th>Nama</th>
 <th>Email</th>
-<th>Status</th>
+{{-- <th>Status</th> --}}
 <th>Opsi</th>
 </tr>
 </thead>
@@ -25,7 +25,7 @@
 <td>{{ $key + 1 }}</td>
 <td>{{ $user->name }}</td>
 <td>{{ $user->email }}</td>
-<td>{{$user->fpelanggan->status}}</td>
+{{-- <td>{{$user->fpelanggan->status}}</td> --}}
 <td>
 <a href="{{ route('daftar.edit', $user) }}" class="btn btn-primary btn-xs">Lengkapi Data</a>
 </td>
